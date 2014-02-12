@@ -1,29 +1,24 @@
-     ____                     __      __
-    /\  _`\                  /\ \    /\ \                                   __
-    \ \ \ \ \     __      ___\ \ \/'\\ \ \____    ___     ___      __      /\_\    ____
-     \ \  _ <'  /'__`\   /'___\ \ , < \ \ '__`\  / __`\ /' _ `\  /'__`\    \/\ \  /',__\
-      \ \ \ \ \/\ \ \.\_/\ \__/\ \ \\`\\ \ \ \ \/\ \ \ \/\ \/\ \/\  __/  __ \ \ \/\__, `\
-       \ \____/\ \__/.\_\ \____\\ \_\ \_\ \_,__/\ \____/\ \_\ \_\ \____\/\_\_\ \ \/\____/
-        \/___/  \/__/\/_/\/____/ \/_/\/_/\/___/  \/___/  \/_/\/_/\/____/\/_/\ \_\ \/___/
-                                                                           \ \____/
-                                                                            \/___/
-    (_'_______________________________________________________________________________'_)
-    (_.———————————————————————————————————————————————————————————————————————————————._)
+<b>backbone学习样例，结合RequireJs</b>
 
+## 增加的
 
-Backbone supplies structure to JavaScript-heavy applications by providing models key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing application over a RESTful JSON interface.
+将RequireJS引入，使得样例中的Todo。js中原本view\model\collection集中一块的写法，分层，看起来更加清晰，便于以后项目更加大的时候的整理重构
 
-For Docs, License, Tests, pre-packed downloads, and everything else, really, see:
-http://backbonejs.org
+新的模块统一使用RequireJS的写法
 
-To suggest a feature, report a bug, or general discussion:
-http://github.com/jashkenas/backbone/issues
+`````javascript
+define([
+  'jquery',
+  'underscore', 
+  'backbone',
+  'collection/todos',
+  'view/todoList',
+  'text!templates/stats.html'
+  ], function($, _, Backbone, Todos, TodoView, statsTemplate){
+  
+     //样例代码
+     
+     
+  }）；
+`````
 
-Backbone is an open-sourced component of DocumentCloud:
-https://github.com/documentcloud
-
-Many thanks to our contributors:
-http://github.com/jashkenas/backbone/contributors
-
-Special thanks to Robert Kieffer for the original philosophy behind Backbone.
-http://github.com/broofa
