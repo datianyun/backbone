@@ -1,6 +1,7 @@
 /**
  * @author yuntian203868
  */
+
 require.config({
 	shim: {
 　　　　　　'underscore':{
@@ -12,12 +13,12 @@ require.config({
 　　　　　　}
 　　　　},
 　　　　paths: {
-        "json2": "../../test/vendor/json2",
-        "jquery": "../../test/vendor/jquery",
-        "underscore": "../../test/vendor/underscore",
-        "backbone": "../../backbone",
+        "json2": "lib/json2",
+        "jquery": "lib/jquery",
+        "underscore": "lib/underscore",
+        "backbone": "lib/backbone",
         "localStorage": "backbone.localStorage",
-        "text": "../../test/vendor/text"
+        "text": "lib/text"
 　　　　}
 });
 
@@ -26,6 +27,10 @@ require.config({
 require(['router'], function(Router){
   Router.initialize();
 });
+
+
+
+
 
 
 

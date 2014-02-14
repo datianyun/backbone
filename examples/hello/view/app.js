@@ -21,9 +21,6 @@ define([
 		
 		    // Delegated events for creating new items, and clearing completed ones.
 		    events: {
-		    	
-		    	
-		    	
 		      "keypress #new-todo":  "createOnEnter",
 		      "click #clear-completed": "clearCompleted",
 		      "click #toggle-all": "toggleAllComplete"

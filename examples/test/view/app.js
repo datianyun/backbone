@@ -1,7 +1,7 @@
 /**
  * @author yuntian203868
  */
-define([
+define('view/app',[
   'jquery',
   'underscore', 
   'backbone',
@@ -21,9 +21,6 @@ define([
 		
 		    // Delegated events for creating new items, and clearing completed ones.
 		    events: {
-		    	
-		    	
-		    	
 		      "keypress #new-todo":  "createOnEnter",
 		      "click #clear-completed": "clearCompleted",
 		      "click #toggle-all": "toggleAllComplete"

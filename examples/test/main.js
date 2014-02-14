@@ -28,5 +28,3 @@ require(['router'], function(Router){
 });
 
 
-
-

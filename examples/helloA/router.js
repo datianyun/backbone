@@ -2,11 +2,10 @@
  * @author yuntian203868
  */
 define('router',[
-	'json2',
   'jquery',
   'underscore',
   'backbone',
-  'view/app'],function(json2,$,_,Backbone,AppView){ 	
+  'view/app'],function($,_,Backbone,AppView){ 	
   	
   	  var AppRouter = Backbone.Router.extend({
 		    routes: {
