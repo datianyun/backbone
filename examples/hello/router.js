@@ -1,7 +1,7 @@
 /**
  * @author yuntian203868
  */
-define('router',[
+define([
   'jquery',
   'underscore',
   'backbone',
